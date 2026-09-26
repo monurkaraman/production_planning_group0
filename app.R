@@ -1,11 +1,11 @@
 library(shiny)
 
-ui <- navbarPage("Üretim Planlama",
-  tabPanel("Öğrenme Eğrisi", ogrenme_ui("ogrenme"))
+ui <- navbarPage("Production Planning",
+  tabPanel("Learning Curve", learning_ui("learning"))
 )
 
 server <- function(input, output, session) {
-  ogrenme_server("ogrenme")
+  learning_server("learning")
 }
 
 shinyApp(ui, server)
