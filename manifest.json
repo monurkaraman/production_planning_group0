@@ -10,68 +10,6 @@
     "has_parameters": false
   },
   "packages": {
-    "R6": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
-      "description": {
-        "Package": "R6",
-        "Title": "Encapsulated Classes with Reference Semantics",
-        "Version": "2.6.1",
-        "Authors@R": "c(\n    person(\"Winston\", \"Chang\", , \"winston@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
-        "Description": "Creates classes with reference semantics, similar to R's\n    built-in reference classes. Compared to reference classes, R6 classes\n    are simpler and lighter-weight, and they are not built on S4 classes\n    so they do not require the methods package. These classes allow public\n    and private members, and they support inheritance, even when the\n    classes are defined in different packages.",
-        "License": "MIT + file LICENSE",
-        "URL": "https://r6.r-lib.org, https://github.com/r-lib/R6",
-        "BugReports": "https://github.com/r-lib/R6/issues",
-        "Depends": "R (>= 3.6)",
-        "Suggests": "lobstr, testthat (>= 3.0.0)",
-        "Config/Needs/website": "tidyverse/tidytemplate, ggplot2, microbenchmark,\nscales",
-        "Config/testthat/edition": "3",
-        "Encoding": "UTF-8",
-        "RoxygenNote": "7.3.2",
-        "NeedsCompilation": "no",
-        "Packaged": "2025-02-14 21:15:19 UTC; winston",
-        "Author": "Winston Chang [aut, cre],\n  Posit Software, PBC [cph, fnd]",
-        "Maintainer": "Winston Chang <winston@posit.co>",
-        "Repository": "CRAN",
-        "Date/Publication": "2025-02-15 00:50:02 UTC",
-        "Built": "R 4.5.2; ; 2025-11-08 01:59:00 UTC; windows"
-      }
-    },
-    "Rcpp": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
-      "description": {
-        "Package": "Rcpp",
-        "Title": "Seamless R and C++ Integration",
-        "Version": "1.1.1",
-        "Date": "2026-01-07",
-        "Authors@R": "c(person(\"Dirk\", \"Eddelbuettel\", role = c(\"aut\", \"cre\"), email = \"edd@debian.org\",\n                    comment = c(ORCID = \"0000-0001-6419-907X\")),\n             person(\"Romain\", \"Francois\", role = \"aut\",\n                    comment = c(ORCID = \"0000-0002-2444-4226\")),\n             person(\"JJ\", \"Allaire\", role = \"aut\",\n                    comment = c(ORCID = \"0000-0003-0174-9868\")),\n             person(\"Kevin\", \"Ushey\", role = \"aut\",\n                    comment = c(ORCID = \"0000-0003-2880-7407\")),\n             person(\"Qiang\", \"Kou\", role = \"aut\",\n                    comment = c(ORCID = \"0000-0001-6786-5453\")),\n             person(\"Nathan\", \"Russell\", role = \"aut\"),\n             person(\"Iñaki\", \"Ucar\", role = \"aut\",\n                    comment = c(ORCID = \"0000-0001-6403-5550\")),\n             person(\"Doug\", \"Bates\", role = \"aut\",\n                    comment = c(ORCID = \"0000-0001-8316-9503\")),\n             person(\"John\", \"Chambers\", role = \"aut\"))",
-        "Description": "The 'Rcpp' package provides R functions as well as C++ classes which\n offer a seamless integration of R and C++. Many R data types and objects can be\n mapped back and forth to C++ equivalents which facilitates both writing of new\n code as well as easier integration of third-party libraries. Documentation\n about 'Rcpp' is provided by several vignettes included in this package, via the\n 'Rcpp Gallery' site at <https://gallery.rcpp.org>, the paper by Eddelbuettel and\n Francois (2011, <doi:10.18637/jss.v040.i08>), the book by Eddelbuettel (2013,\n <doi:10.1007/978-1-4614-6868-4>) and the paper by Eddelbuettel and Balamuta (2018,\n <doi:10.1080/00031305.2017.1375990>); see 'citation(\"Rcpp\")' for details.",
-        "Depends": "R (>= 3.5.0)",
-        "Imports": "methods, utils",
-        "Suggests": "tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)",
-        "URL": "https://www.rcpp.org,\nhttps://dirk.eddelbuettel.com/code/rcpp.html,\nhttps://github.com/RcppCore/Rcpp",
-        "License": "GPL (>= 2)",
-        "BugReports": "https://github.com/RcppCore/Rcpp/issues",
-        "MailingList": "rcpp-devel@lists.r-forge.r-project.org",
-        "RoxygenNote": "6.1.1",
-        "Encoding": "UTF-8",
-        "VignetteBuilder": "Rcpp",
-        "NeedsCompilation": "yes",
-        "Packaged": "2026-01-08 14:33:45 UTC; edd",
-        "Author": "Dirk Eddelbuettel [aut, cre] (ORCID:\n    <https://orcid.org/0000-0001-6419-907X>),\n  Romain Francois [aut] (ORCID: <https://orcid.org/0000-0002-2444-4226>),\n  JJ Allaire [aut] (ORCID: <https://orcid.org/0000-0003-0174-9868>),\n  Kevin Ushey [aut] (ORCID: <https://orcid.org/0000-0003-2880-7407>),\n  Qiang Kou [aut] (ORCID: <https://orcid.org/0000-0001-6786-5453>),\n  Nathan Russell [aut],\n  Iñaki Ucar [aut] (ORCID: <https://orcid.org/0000-0001-6403-5550>),\n  Doug Bates [aut] (ORCID: <https://orcid.org/0000-0001-8316-9503>),\n  John Chambers [aut]",
-        "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
-        "Repository": "CRAN",
-        "Date/Publication": "2026-01-10 09:50:02 UTC",
-        "Built": "R 4.5.3; x86_64-w64-mingw32; 2026-03-28 18:48:23 UTC; windows",
-        "Archs": "x64",
-        "RemoteType": "standard",
-        "RemotePkgRef": "Rcpp",
-        "RemoteRef": "Rcpp",
-        "RemoteRepos": "https://cran.rstudio.com",
-        "RemoteSha": "1.1.1"
-      }
-    },
     "base64enc": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -155,6 +93,16 @@
         "Archs": "x64"
       }
     },
+    "cellranger": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "cellranger",
+        "Version": "1.1.0",
+        "Title": "Translate Spreadsheet Cell Ranges to Rows and Columns",
+        "Repository": "CRAN"
+      }
+    },
     "cli": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -211,6 +159,26 @@
         "Archs": "x64"
       }
     },
+    "cpp11": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "cpp11",
+        "Version": "0.5.2",
+        "Title": "A C++11 Interface for R's C Interface",
+        "Repository": "CRAN"
+      }
+    },
+    "crayon": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "crayon",
+        "Version": "1.5.3",
+        "Title": "Colored Terminal Output",
+        "Repository": "CRAN"
+      }
+    },
     "digest": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -237,6 +205,16 @@
         "Date/Publication": "2025-11-12 08:40:02 UTC",
         "Built": "R 4.5.2; x86_64-w64-mingw32; 2025-11-12 10:20:25 UTC; windows",
         "Archs": "x64"
+      }
+    },
+    "fansi": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "fansi",
+        "Version": "1.0.6",
+        "Title": "ANSI Control Sequence Aware String Functions",
+        "Repository": "CRAN"
       }
     },
     "fastmap": {
@@ -356,6 +334,16 @@
         "Date/Publication": "2024-09-30 22:30:01 UTC",
         "Built": "R 4.5.2; x86_64-w64-mingw32; 2025-11-08 01:58:59 UTC; windows",
         "Archs": "x64"
+      }
+    },
+    "hms": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "hms",
+        "Version": "1.1.3",
+        "Title": "Pretty Time of Day",
+        "Repository": "CRAN"
       }
     },
     "htmltools": {
@@ -642,6 +630,46 @@
         "Built": "R 4.5.2; ; 2025-11-08 01:59:31 UTC; windows"
       }
     },
+    "pillar": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "pillar",
+        "Version": "1.11.0",
+        "Title": "Coloured Formatting for Columns",
+        "Repository": "CRAN"
+      }
+    },
+    "pkgconfig": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "pkgconfig",
+        "Version": "2.0.3",
+        "Title": "Private Configuration for 'R' Packages",
+        "Repository": "CRAN"
+      }
+    },
+    "prettyunits": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "prettyunits",
+        "Version": "1.2.0",
+        "Title": "Pretty, Human Readable Formatting of Quantities",
+        "Repository": "CRAN"
+      }
+    },
+    "progress": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "progress",
+        "Version": "1.2.3",
+        "Title": "Terminal Progress Bars",
+        "Repository": "CRAN"
+      }
+    },
     "promises": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -674,6 +702,33 @@
         "Built": "R 4.5.2; ; 2025-11-08 00:51:39 UTC; windows"
       }
     },
+    "R6": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "R6",
+        "Title": "Encapsulated Classes with Reference Semantics",
+        "Version": "2.6.1",
+        "Authors@R": "c(\n    person(\"Winston\", \"Chang\", , \"winston@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Creates classes with reference semantics, similar to R's\n    built-in reference classes. Compared to reference classes, R6 classes\n    are simpler and lighter-weight, and they are not built on S4 classes\n    so they do not require the methods package. These classes allow public\n    and private members, and they support inheritance, even when the\n    classes are defined in different packages.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://r6.r-lib.org, https://github.com/r-lib/R6",
+        "BugReports": "https://github.com/r-lib/R6/issues",
+        "Depends": "R (>= 3.6)",
+        "Suggests": "lobstr, testthat (>= 3.0.0)",
+        "Config/Needs/website": "tidyverse/tidytemplate, ggplot2, microbenchmark,\nscales",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.2",
+        "NeedsCompilation": "no",
+        "Packaged": "2025-02-14 21:15:19 UTC; winston",
+        "Author": "Winston Chang [aut, cre],\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Winston Chang <winston@posit.co>",
+        "Repository": "CRAN",
+        "Date/Publication": "2025-02-15 00:50:02 UTC",
+        "Built": "R 4.5.2; ; 2025-11-08 01:59:00 UTC; windows"
+      }
+    },
     "rappdirs": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -701,6 +756,61 @@
         "Date/Publication": "2021-01-31 05:40:02 UTC",
         "Built": "R 4.5.2; x86_64-w64-mingw32; 2025-11-08 01:59:03 UTC; windows",
         "Archs": "x64"
+      }
+    },
+    "Rcpp": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "Rcpp",
+        "Title": "Seamless R and C++ Integration",
+        "Version": "1.1.1",
+        "Date": "2026-01-07",
+        "Authors@R": "c(person(\"Dirk\", \"Eddelbuettel\", role = c(\"aut\", \"cre\"), email = \"edd@debian.org\",\n                    comment = c(ORCID = \"0000-0001-6419-907X\")),\n             person(\"Romain\", \"Francois\", role = \"aut\",\n                    comment = c(ORCID = \"0000-0002-2444-4226\")),\n             person(\"JJ\", \"Allaire\", role = \"aut\",\n                    comment = c(ORCID = \"0000-0003-0174-9868\")),\n             person(\"Kevin\", \"Ushey\", role = \"aut\",\n                    comment = c(ORCID = \"0000-0003-2880-7407\")),\n             person(\"Qiang\", \"Kou\", role = \"aut\",\n                    comment = c(ORCID = \"0000-0001-6786-5453\")),\n             person(\"Nathan\", \"Russell\", role = \"aut\"),\n             person(\"Iñaki\", \"Ucar\", role = \"aut\",\n                    comment = c(ORCID = \"0000-0001-6403-5550\")),\n             person(\"Doug\", \"Bates\", role = \"aut\",\n                    comment = c(ORCID = \"0000-0001-8316-9503\")),\n             person(\"John\", \"Chambers\", role = \"aut\"))",
+        "Description": "The 'Rcpp' package provides R functions as well as C++ classes which\n offer a seamless integration of R and C++. Many R data types and objects can be\n mapped back and forth to C++ equivalents which facilitates both writing of new\n code as well as easier integration of third-party libraries. Documentation\n about 'Rcpp' is provided by several vignettes included in this package, via the\n 'Rcpp Gallery' site at <https://gallery.rcpp.org>, the paper by Eddelbuettel and\n Francois (2011, <doi:10.18637/jss.v040.i08>), the book by Eddelbuettel (2013,\n <doi:10.1007/978-1-4614-6868-4>) and the paper by Eddelbuettel and Balamuta (2018,\n <doi:10.1080/00031305.2017.1375990>); see 'citation(\"Rcpp\")' for details.",
+        "Depends": "R (>= 3.5.0)",
+        "Imports": "methods, utils",
+        "Suggests": "tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)",
+        "URL": "https://www.rcpp.org,\nhttps://dirk.eddelbuettel.com/code/rcpp.html,\nhttps://github.com/RcppCore/Rcpp",
+        "License": "GPL (>= 2)",
+        "BugReports": "https://github.com/RcppCore/Rcpp/issues",
+        "MailingList": "rcpp-devel@lists.r-forge.r-project.org",
+        "RoxygenNote": "6.1.1",
+        "Encoding": "UTF-8",
+        "VignetteBuilder": "Rcpp",
+        "NeedsCompilation": "yes",
+        "Packaged": "2026-01-08 14:33:45 UTC; edd",
+        "Author": "Dirk Eddelbuettel [aut, cre] (ORCID:\n    <https://orcid.org/0000-0001-6419-907X>),\n  Romain Francois [aut] (ORCID: <https://orcid.org/0000-0002-2444-4226>),\n  JJ Allaire [aut] (ORCID: <https://orcid.org/0000-0003-0174-9868>),\n  Kevin Ushey [aut] (ORCID: <https://orcid.org/0000-0003-2880-7407>),\n  Qiang Kou [aut] (ORCID: <https://orcid.org/0000-0001-6786-5453>),\n  Nathan Russell [aut],\n  Iñaki Ucar [aut] (ORCID: <https://orcid.org/0000-0001-6403-5550>),\n  Doug Bates [aut] (ORCID: <https://orcid.org/0000-0001-8316-9503>),\n  John Chambers [aut]",
+        "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
+        "Repository": "CRAN",
+        "Date/Publication": "2026-01-10 09:50:02 UTC",
+        "Built": "R 4.5.3; x86_64-w64-mingw32; 2026-03-28 18:48:23 UTC; windows",
+        "Archs": "x64",
+        "RemoteType": "standard",
+        "RemotePkgRef": "Rcpp",
+        "RemoteRef": "Rcpp",
+        "RemoteRepos": "https://cran.rstudio.com",
+        "RemoteSha": "1.1.1"
+      }
+    },
+    "readxl": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "readxl",
+        "Version": "1.4.5",
+        "Title": "Read Excel Files",
+        "Repository": "CRAN"
+      }
+    },
+    "rematch": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "rematch",
+        "Version": "2.0.0",
+        "Title": "Match Regular Expressions with a Nicer 'API'",
+        "Repository": "CRAN"
       }
     },
     "rlang": {
@@ -821,6 +931,36 @@
         "Archs": "x64"
       }
     },
+    "tibble": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "tibble",
+        "Version": "3.3.0",
+        "Title": "Simple Data Frames",
+        "Repository": "CRAN"
+      }
+    },
+    "utf8": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "utf8",
+        "Version": "1.2.6",
+        "Title": "Unicode Text Processing",
+        "Repository": "CRAN"
+      }
+    },
+    "vctrs": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "vctrs",
+        "Version": "0.6.5",
+        "Title": "Vector Helpers",
+        "Repository": "CRAN"
+      }
+    },
     "withr": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -879,10 +1019,13 @@
   },
   "files": {
     "app.R": {
-      "checksum": "d6b6abe8bb020f783ee16ab97e8e471d"
+      "checksum": "c821893c1abf603a807b2c8ca932cedd"
     },
-    "R/ogrenme.R": {
-      "checksum": "01c559af40b32dc164d60ba200b21e6f"
+    "R/learning_curve.R": {
+      "checksum": "7093f9b6b9d12d4dc8c7f65aab3700e7"
+    },
+    "R/moving_average.R": {
+      "checksum": "552ed023d411e23782f0e31de62634e7"
     },
     "README.md": {
       "checksum": "b080e1275a9fc5c9523dcc678507e8ef"
